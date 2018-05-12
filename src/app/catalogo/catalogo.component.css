@@ -1,0 +1,49 @@
+.mycontenedor{
+	/*background-image: url('/assets/main-fondo.jpg');*/
+	width:100%;
+	/*height:853px;*/
+	height: 1080px;
+	position: relative;
+}
+
+.menu{
+	background-color: #F5F5F5;
+	position :relative !important;
+	left: 10% !important;
+    width: 80%;
+}
+
+.catalogo{
+	background-color: #FAFAFA;
+	position :relative !important; 
+    left: 10% !important;
+    width: 80%;
+    
+}
+
+.mycard{
+	height: 500px !important;
+    overflow-x: hidden;
+}
+
+
+.tb{
+	padding: 10px;
+}
+
+@media (min-width: 576px){
+	.card-columns {
+	    -webkit-column-count: 4;
+	    column-count: 4;
+	    -webkit-column-gap: 1.25rem;
+	    column-gap: 1.25rem;
+	}
+}
+
+.card-columns{
+	padding: 5px;
+}
+
+.noproductos{
+	padding: 10px;
+}

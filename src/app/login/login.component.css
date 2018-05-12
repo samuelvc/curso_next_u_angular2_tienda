@@ -1,0 +1,36 @@
+
+.mycontenedor{
+  /*background-image: url('/assets/login-fondo.jpg');*/
+  width:100%;
+  height: 1080px;
+  position: relative;
+}
+
+
+.login{
+  width: 60%;
+  color: white;
+  font-family: sans-serif;
+  margin-left: 20px;
+  margin-top: 28%;
+}
+
+.error{
+  color:red;
+}
+
+input.ng-touched.ng-invalid{
+  border: 1px solid red;
+}
+
+fieldset{
+  text-align: center;
+}
+
+label{
+  text-align: left;
+}
+
+.mybtn{
+  text-align:center;
+}

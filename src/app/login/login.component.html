@@ -1,0 +1,36 @@
+
+<div class="mycontenedor">
+  <div style="position: absolute; width: 100%; height: 100%;">
+    <img src="/assets/login-fondo.jpg" style="width: 100%; height: 100%;" class="img-fluid">
+  </div>
+  <div id="login" class="row">
+    <div class="col-lg-3 col-md-3 col-sm-12"></div>
+
+    <div class="col-lg-6 col-md-6 col-sm-12">
+    <form class="login" (ngSubmit)="enviarForm(f)" #f="ngForm">
+      <fieldset>Iniciar Sesión</fieldset>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Correo Electronico</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" ngModel name="email" required>
+        <label class="error" visible="!IsValidEmail" *ngIf="!IsValidEmail">Debes ingresar un correo valido.</label>
+      </div>
+
+      <div class="form-group">
+        <label for="exampleInputPassword1">Contraseña</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" ngModel name="password" required>
+        <label class="error" visible="!IsValidPassword" *ngIf="!IsValidPassword">Debes ingresar una contraseña.</label>
+      </div>
+  	
+  	<div class="form-group" *ngIf="!IsValid">
+  		<label class="error">Error en el inicio de sesión.</label>
+  	</div>
+
+      <div class="form-group mybtn">
+        <button type="submit" class="btn btn-success">Ingresar</button>
+      </div>
+    </form>
+    </div>
+
+    <div class="col-lg-6 col-md-3 col-sm-12"></div>   
+  </div>
+</div>
